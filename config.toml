@@ -1,0 +1,4 @@
+baseURL = "https://words.saulecabrera.com/"
+languageCode = "en-us"
+title = "Saúl Cabrera"
+theme = "paper"
