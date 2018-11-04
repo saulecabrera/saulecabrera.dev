@@ -2,3 +2,15 @@ baseURL = "/"
 languageCode = "en-us"
 title = "Words | Saúl Cabrera"
 theme = "hugo-paper"
+
+[menu]
+
+  [[menu.main]]
+    identifier = "github"
+    name = "github"
+    url = "https://github.com/saulecabrera"
+
+  [[menu.main]]
+    identifier="twitter"
+    name = "twitter"
+    url = "https://twitter.com/saulecabrera"
