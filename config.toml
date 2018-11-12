@@ -2,6 +2,7 @@ baseURL = "/"
 languageCode = "en-us"
 title = "Words | Saúl Cabrera"
 theme = "hugo-paper"
+pygmentsStyle = "monokailight"
 
 [menu]
 

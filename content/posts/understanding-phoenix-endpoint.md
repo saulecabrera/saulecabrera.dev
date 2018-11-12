@@ -58,12 +58,12 @@ To understand how embedding ranch listeners into your application's supervision 
 
 Routing consists of mapping routes to modules that act as handlers, code in those modules will be executed when a route matches. Routes look the following:
 
-```erlang
+{{<highlight erlang>}}
 Routes = [Host]
 Host = {HostMatch, PathList} | {HostMatch, Constraints, PathList}
 PathList = [Path]
 Path = {PathMatch, Handler, Opts} | {PathMatch, Constraints, Handler, Opts}
-```
+{{</highlight>}}
 
 Each handler specified in each path defines an `init/3` function which will be called by Cowboy when a request matches the route associated to that handler, passing the defined options as parameters.
 
@@ -72,14 +72,14 @@ Each handler specified in each path defines an `init/3` function which will be c
 Back to embedded mode, when `child_spec/3` gets called on any of the endpoint handlers, the routes for the application will be defined, compiled and passed as options to the start function of the returned supervisor spec.
 The returned child spec has the following structure:
 
-```erlang
+{{<highlight erlang>}}
 %{
     id: {:ranch_listener_sup, ref},
     start: {:ranch_listener_sup, :start_link, [
-        # start options are defined here, including routing
+      %% start options are defined here, including routing
     ]}
 }
-```
+{{</highlight>}}
 
 - `ranch_listener_sup` is the supervisor that gets embedded into your application; once it's started, two additional supervisors are defined as part of its supervision tree:
 
@@ -99,9 +99,9 @@ The following image depicts `ranch_listener_sup` supervision tree as described a
 
 One example of how routes are defined by `child_spec/3` is the endpoint route path:
 
-```erlang
+{{<highlight erlang>}}
 {:_, Plug.Adapters.Cowboy.Handler, {YourApp.Endpoint, []}}
-```
+{{</highlight>}}
 
 It complies with the definition of `Path` listed above:
 
