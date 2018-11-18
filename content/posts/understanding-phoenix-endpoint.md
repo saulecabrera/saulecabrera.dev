@@ -1,6 +1,9 @@
 ---
 title: "Understanding Phoenix Endpoint"
 date: 2018-02-25T13:39:04-04:00
+tags:
+  - elixir
+  - phoenix
 draft: false
 ---
 
