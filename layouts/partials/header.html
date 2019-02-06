@@ -36,9 +36,11 @@
     {{ template "_internal/google_analytics_async.html" . }}
   {{ end }}
   <style>
-    body {
-      font-family: 'Karla', sans-serif !important;
-    }
+   @import url('https://rsms.me/inter/inter.css');
+
+   body {
+     font-family: 'Inter var', sans-serif !important;
+   }
   </style>
 </head>
 <body class="{{if eq .Kind `page` }}single{{else}}list{{ if .IsHome }} home{{ end }}{{end}}">
