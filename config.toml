@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "Words | Saúl Cabrera"
+title = "Words"
 theme = "hugo-paper"
 pygmentsStyle = "monokailight"
 

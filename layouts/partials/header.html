@@ -41,12 +41,36 @@
    html, body {
      font-family: 'Inter var', sans-serif !important;
      font-size: 16px!important;
-     line-height: 1.5!important;
+     line-height: 22px;
+     -webkit-font-smoothing: antialiased;
    }
 
    .header .title a {
-     font-size: 16px!important;
+     font-size: 1rem!important;
      text-transform: uppercase!important;
+     letter-spacing: 0.2rem;
+     font-weight: 500;
+   }
+
+   .post-header .post-meta, .post-footer .post-meta{
+     font-size: 0.875rem!important;
+   }
+
+   .post-view {
+     max-width: 600px!important;
+     width: 600px!important;
+     margin: 0 auto!important;
+   }
+
+   .first-entry {
+     min-height: auto;
+   }
+
+   .first-post-meta {
+     font-size: 0.875rem;
+     font-weight: 700;
+     text-transform: uppercase;
+     color: black;
    }
 
    h1 {font-size: 2.5rem!important}
@@ -56,16 +80,12 @@
    h5 {font-size: 1.25rem!important}
    h6 {font-size: 1rem!important}
 
-   article p {
-     font-size: 1.15rem!important;
-   }
-
-   code {
+   article p, .post-summary {
      font-size: 1rem!important;
    }
 
-   .hightlight {
-     font-size: 1.25rem!important;
+   code, .hightlight {
+     font-size: 0.9rem!important;
    }
   </style>
 </head>

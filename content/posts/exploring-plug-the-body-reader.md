@@ -54,7 +54,7 @@ To instruct plug that we want to cache the body before parsing the body, we can 
 
 
 The `body_reader` option accepts a tuple containing a module, a function and arguments, which will get invoked before the body is
-parsed and discarded. In the example above we're passing `{BodyReader, :cache, []}`, it's implementation looks like the following:
+parsed and discarded. In the example above we're passing `{BodyReader, :cache, []}`, its implementation looks like the following:
 
 {{<highlight elixir>}}
   defmodule BodyReader do
