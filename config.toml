@@ -13,9 +13,10 @@ favicon = "/img/favicon.png"
 mainSections = ["post"]
 email = "saulecabrera@gmail.com"
 about = """
-Hi. My name is **Saúl**, also known as @saulecabrera on the internet.
 
-This is my personal space on the internet. I mostly ramble about dev tools, compilers
+👋 My name is **Saúl**, also known as @saulecabrera on the internet.
+
+This is my personal space where I try to keep a daily worklog and sometimes I ramble about dev tools, compilers
 and programming in general.
 """
 
