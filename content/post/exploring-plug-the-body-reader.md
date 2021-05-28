@@ -1,7 +1,7 @@
 ---
 title: "Exploring Plug: The Body Reader"
 date: 2018-11-14T18:13:34-05:00
-tags: ["elixir", "plug"]
+tags: ["blog", "elixir", "plug"]
 ---
 
 Ever wondered why sometimes `Plug.Conn.read_body/2` returns `nil`
