@@ -1,10 +1,10 @@
 title = "@saulecabrera | words"
-theme = "rocinante"
+theme = "PaperMod"
 baseUrl = "https://words.saulecabrera.dev/"
 
 [markup]
 [markup.highlight]
-style = "monokailight"
+style = "monokai"
 [markup.goldmark.renderer]
 unsafe= true
 
