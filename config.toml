@@ -11,33 +11,32 @@ unsafe= true
 [params]
 favicon = "/img/favicon.png"
 mainSections = ["post"]
-email = "saulecabrera@gmail.com"
-about = """
 
-👋 My name is **Saúl**, also known as @saulecabrera on the internet.
-
-This is my personal space where I try to keep a TIL log of any interesting
+[params.homeInfoParams]
+Title = "👋"
+Content =  """
+My name is **Saúl**, also known as @saulecabrera on the internet. This is my personal space where I try to keep a TIL log of any interesting
 computer related things I do or learn in my day to day.
 
-Sometimes I also ~~blog~~ ramble about dev tools, compilers
-and programming in general.
+Sometimes I also ~~blog~~ ramble about dev tools, compilers and programming in general.
 """
 
-[[params.links]]
-[[params.links.link]]
-name = "Email"
-href = "/contact"
-smart_email_link = true
+[[params.socialIcons]]
+name = "twitter"
+url = "https://twitter.com/saulecabrera"
 
-[[params.links]]
-[[params.links.link]]
-name = "Github"
-href = "https://github.com/saulecabrera"
-new_tab = true
-[[params.links.link]]
-name = "Twitter"
-href = "https://twitter.com/saulecabrera"
-new_tab = true
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/saulecabrera"
 
-paginate = 6
+[[menu.main]]
+identifier = "archives"
+name = "Archives"
+url = "/archives/"
+weight = 20
 
+[[menu.main]]
+identifier = "tags"
+name = "Tags"
+url = "/tags/"
+weight = 20
