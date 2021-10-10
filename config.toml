@@ -16,7 +16,7 @@ mainSections = ["post"]
 Title = "👋"
 Content =  """
 My name is Saúl Cabrera. I'm a software engineer, interested in programming
-languages and functional programming.
+languages, developer tooling and functional programming.
 """
 
 [[params.socialIcons]]
