@@ -1,4 +1,4 @@
-title = "@saulecabrera | words"
+title = "@saulecabrera"
 theme = "PaperMod"
 baseUrl = "https://words.saulecabrera.dev/"
 
@@ -15,10 +15,8 @@ mainSections = ["post"]
 [params.homeInfoParams]
 Title = "👋"
 Content =  """
-My name is **Saúl**, also known as @saulecabrera on the internet. This is my personal space where I try to keep a TIL log of any interesting
-computer related things I do or learn in my day to day.
-
-Sometimes I also ~~blog~~ ramble about dev tools, compilers and programming in general.
+My name is Saúl Cabrera. I'm a software engineer, interested in programming
+languages and functional programming.
 """
 
 [[params.socialIcons]]
@@ -28,6 +26,10 @@ url = "https://twitter.com/saulecabrera"
 [[params.socialIcons]]
 name = "github"
 url = "https://github.com/saulecabrera"
+
+[[params.socialIcons]]
+name = "email"
+url = "mailto:saulecabrera@gmail.com"
 
 [[menu.main]]
 identifier = "archives"
@@ -39,4 +41,10 @@ weight = 20
 identifier = "tags"
 name = "Tags"
 url = "/tags/"
+weight = 20
+
+[[menu.main]]
+identifier = "talks"
+name = "Talks"
+url = "/Talks/"
 weight = 20
