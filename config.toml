@@ -1,16 +1,23 @@
 title = "@saulecabrera"
-theme = "PaperMod"
+theme = "hugo-PaperModX"
 baseUrl = "https://saulecabrera.dev/"
 
-[markup]
-[markup.highlight]
-style = "monokai"
 [markup.goldmark.renderer]
-unsafe= true
+unsafe = true
+
+[markup.highlight]
+lineNos = false
+noClasses = false
 
 [params]
 favicon = "/img/favicon.png"
 mainSections = ["post"]
+defaultTheme = "light"
+disableThemeToggle = true
+pygmentsStyle = "pygments"
+
+[params.assets]
+disableHLJS = true
 
 [params.homeInfoParams]
 Title = "👋"
