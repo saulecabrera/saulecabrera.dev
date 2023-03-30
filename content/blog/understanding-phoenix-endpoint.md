@@ -1,7 +1,7 @@
 ---
 title: "Understanding Phoenix Endpoint"
 date: 2018-02-25T13:39:04-04:00
-tags: ["blog", "elixir", "phoenix"]
+categories: ["programming", "phoenix"]
 ---
 
 This small article aims be to a rough introduction to how the Phoenix endpoint works. It assumes intermediate knowledge of Phoenix and Elixir.

@@ -1,57 +1,85 @@
-title = "@saulecabrera"
-theme = "hugo-PaperModX"
-baseUrl = "https://saulecabrera.dev/"
+######################## default configuration ####################
+baseURL = "https://saulecabrera.dev/"
+title = "Saúl Cabrera"
+theme = "twenty-twenty-hugo"
+languageName = "En"
+languageCode = "en-us"
+# post pagination
+paginate = "6"
+# post excerpt
+summaryLength = "10"
 
+
+############################## Output ###############################
+[outputs]
+home = ["HTML", "RSS", "JSON"]
+
+# unsafe html
 [markup.goldmark.renderer]
 unsafe = true
 
-[markup.highlight]
-lineNos = false
-noClasses = false
+[taxonomies]
+category = "categories"
+tag = "tags"
+author = "author"
 
-[params]
-favicon = "/img/favicon.png"
-mainSections = ["post"]
-defaultTheme = "light"
-disableThemeToggle = true
-pygmentsStyle = "pygments"
+############################## navigation ###############################
 
-[params.assets]
-disableHLJS = true
-
-[params.homeInfoParams]
-Title = "👋"
-Content =  """
-Hi! My name is Saúl Cabrera. I'm a software engineer interested in compilers,
-developer tooling and functional programming.
-"""
-
-[[params.socialIcons]]
-name = "twitter"
-url = "https://twitter.com/saulecabrera"
-
-[[params.socialIcons]]
-name = "github"
-url = "https://github.com/saulecabrera"
-
-[[params.socialIcons]]
-name = "email"
-url = "mailto:saulecabrera@gmail.com"
+# main menu
+[[menu.main]]
+name = "Home"
+URL = "/"
+weight = 1
 
 [[menu.main]]
-identifier = "archives"
-name = "Archives"
-url = "/archives/"
-weight = 20
+name = "Archive"
+URL = "/blog"
+weight = 3
 
 [[menu.main]]
-identifier = "tags"
-name = "Tags"
-url = "/tags/"
-weight = 20
+name = "Contact"
+URL = "contact/"
+weight = 2
 
 [[menu.main]]
-identifier = "talks"
 name = "Talks"
-url = "/Talks/"
-weight = 20
+URL = "talks/"
+weight = 3
+
+
+#################### default parameters ################################
+[params]
+# Meta data
+description = "This is meta description"
+author = "Saúl Cabrera"
+
+# cookies
+[params.cookies]
+enable = true
+expire_days = 2
+
+[params.footer]
+title = "Saúl Cabrera"
+content = "I'm a software engineer, interested in compilers, developer tooling and functional programming."
+
+[params.social]
+twitter = "https://twitter.com/saulecabrera"
+email = "mailto:saulecabrera@gmail.com"
+github = "https://github.com/saulecabrera"
+
+
+[markup]
+  [markup.highlight]
+    anchorLineNos = false
+    codeFences = true
+    guessSyntax = false
+    hl_Lines = ''
+    hl_inline = false
+    lineAnchors = ''
+    lineNoStart = 1
+    lineNos = false
+    lineNumbersInTable = true
+    noClasses = true
+    noHl = false
+    style = 'solarized-light'
+    tabWidth = 2

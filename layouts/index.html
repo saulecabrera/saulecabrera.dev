@@ -1,0 +1,8 @@
+{{ define "main" }}
+{{ range (where .Site.RegularPages "Section" "blog") }}
+{{ .Render "post" }}
+<div class="entry-content">
+  <hr></hr>
+</div>
+{{ end }}
+{{ end }}
