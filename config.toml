@@ -55,12 +55,12 @@ author = "Saúl Cabrera"
 
 # cookies
 [params.cookies]
-enable = true
-expire_days = 2
+enable = false
 
 [params.footer]
 title = "Saúl Cabrera"
-content = "I'm a software engineer, interested in compilers, developer tooling and functional programming."
+content = "I'm a software engineer, interested in compilers, developer tooling and functional programming.
+I mainly hack on WebAssembly related tools and compilers as my day to day job."
 
 [params.social]
 twitter = "https://twitter.com/saulecabrera"
